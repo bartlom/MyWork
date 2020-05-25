@@ -14,7 +14,8 @@ two2([0]) → [0]
      */
     public static List<Integer> two2(List<Integer> nums) {
         nums = (List<Integer>) nums.stream()
-                .map(n -> n * 2).filter(n -> rightmostDigits10(n) != 2)
+                .map(n -> n * 2)
+                .filter(n -> rightmostDigits10(n) != 2)
                 .collect(Collectors.toList());
         return nums;
     }
