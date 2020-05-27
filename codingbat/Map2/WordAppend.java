@@ -4,9 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WordAppend {
-    /*
-    Loop over the given array of strings to build a result string like this: when a string appears the 2nd, 4th, 6th, etc. time in the array,
-    append the string to the result. Return the empty string if no string appears a 2nd time.
+
+/*
+
+Loop over the given array of strings to build a result string like this:
+when a string appears the 2nd, 4th, 6th, etc. time in the array,
+append the string to the result. Return the empty string if no string appears a 2nd time.
+
 wordAppend(["a", "b", "a"]) → "a"
 wordAppend(["a", "b", "a", "c", "a", "d", "a"]) → "aa"
 wordAppend(["a", "", "a"]) → "a"
@@ -21,7 +25,9 @@ wordAppend(["not", "and", "or", "and", "this", "and", "or", "that", "not"]) → 
 wordAppend(["a", "b", "c"]) → ""	""	OK
 wordAppend(["this", "or", "that", "and", "this", "and", "that"]) → "thisandthat"	"thisandthat"	OK
 wordAppend(["xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx"]) → "xxyyzzxx"	"xxyyzzxx"
-     */
+
+*/
+
     public String wordAppend(String[] strings) {
         Map<String, Integer> map = new HashMap<String, Integer>();
         String result = "";
