@@ -45,23 +45,3 @@ changeXY("xhixhix") → "yhiyhiy"
     }
 
 }
-
-//        String afterChange = "y";
-//        String beforeChange = "x";
-//
-//        int index = 0;
-//        if (str.length() == index) return str;
-//        else {
-//            changeDo(str, beforeChange, afterChange, index);
-//            index++;
-//        }
-//        return changeXY(str);
-//    }
-//
-//    public static String changeDo(String str, String beforeChange, String afterChange, int index) {
-//        if (str.substring(index, index + 1).equals(beforeChange))
-//            str = str.substring(0, index) + afterChange + str.substring(index + 1);
-//        return str;
-//    }
-
-}
