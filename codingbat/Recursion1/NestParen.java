@@ -32,7 +32,8 @@ nestParen("(((())))") → true
 
     public boolean nestParen(String str) {
 
-        if (str.length() == 0) return true;
+        if (str.length() == 0)
+            return true;
 
         char searchStart = '(';
         char searchEnd = ')';
@@ -40,7 +41,6 @@ nestParen("(((())))") → true
         if (startStringSearchChar(str, searchStart) && endStringSearchChar(str, searchEnd)) {
             return nestParen(str.substring(1, str.length() - 1));
         }
-
         return false;
     }
 
