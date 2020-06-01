@@ -17,15 +17,22 @@ count8(8818) → 4
 */
 
     public static int count8(int n) {
+
         int check = 8;
-        if (n < 100) return rightmostDigits10(n, check) + rightmostDigits10(n / 10, check);
+
+        if (n < 100) {
+            return rightmostDigits10(n, check) + rightmostDigits10(n / 10, check);
+        }
         return rightmostDigits10(n, check) + count8(n / 10);
     }
 
     public static int rightmostDigits10(int fullNumber, int check) {
         int countResult = 0;
-        if (fullNumber % 10 == check && (fullNumber / 10) % 10 == check) countResult = +2;
-        else if (fullNumber % 10 == check) countResult++;
+        if (fullNumber % 10 == check && (fullNumber / 10) % 10 == check) {
+            countResult = +2;
+        } else if (fullNumber % 10 == check) {
+            countResult++;
+        }
         return countResult;
     }
 }

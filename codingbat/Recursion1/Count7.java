@@ -17,13 +17,17 @@ count7(123) → 0
 
     public static int count7(int n) {
         int check = 7;
-        if (n < 10) return rightmostDigits10(n, check);
+        if (n < 10) {
+            return rightmostDigits10(n, check);
+        }
         return rightmostDigits10(n, check) + count7(n / 10);
     }
 
     public static int rightmostDigits10(int fullNumber, int check) {
         int countResult = 0;
-        if (fullNumber % 10 == check) countResult++;
+        if (fullNumber % 10 == check) {
+            countResult++;
+        }
         return countResult;
     }
 
