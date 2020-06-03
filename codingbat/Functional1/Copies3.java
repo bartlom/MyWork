@@ -11,7 +11,7 @@ copies3(["24", "a", ""]) → ["242424", "aaa", ""]
 copies3(["hello", "there"]) → ["hellohellohello", "theretherethere"]
      */
     public List<String> copies3(List<String> strings) {
-        strings.replaceAll(n -> n+n+n);
+        strings.replaceAll(n -> n + n + n);
         return strings;
     }
 
