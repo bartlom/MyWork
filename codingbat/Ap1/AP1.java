@@ -28,7 +28,9 @@ wordsFront(["Hi", "There"], 2) → ["Hi", "There"]
     }
 
     public String[] wordFront2(String[] words, int n) {
-        return Arrays.stream(words).limit(n).toArray(String[]::new);
+        return Arrays.stream(words)
+                .limit(n)
+                .toArray(String[]::new);
     }
 }
 
