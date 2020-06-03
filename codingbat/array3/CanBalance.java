@@ -11,7 +11,7 @@ canBalance([10, 10]) → true
 
      */
 
-    public static int[] canBalanceArray= new int[]{1, 1, 1, 2, 1};
+    public static int[] canBalanceArray = new int[]{1, 1, 1, 2, 1};
 
     static int getSum(int[] array) {
         int sumGetSum = 0;
