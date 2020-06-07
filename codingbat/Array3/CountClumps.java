@@ -1,4 +1,4 @@
-package com.codingbat.array3;
+package com.codingbat.Array3;
 
 /*
 
