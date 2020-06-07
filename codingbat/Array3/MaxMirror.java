@@ -31,7 +31,8 @@ maxMirror([5, 9, 1, 6, 5, 4, 1, 9, 5]) → 3
 
 public class MaxMirror {
 
-    public static int[] numsMirror = {5, 9, 1, 6, 5, 4, 1, 9, 5};
+
+    public static int[] numsMirror = new int[]{5, 9, 1, 6, 5, 4, 1, 9, 5};
 
     public static int maxMirror(int[] nums) {
 
