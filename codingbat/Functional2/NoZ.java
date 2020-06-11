@@ -19,9 +19,8 @@ noZ(["x", "y", "z"]) → ["x", "y"]
 
 */
 
-
 public class NoZ {
-    
+
     public List<String> noZ(List<String> strings) {
         strings.removeIf(n -> n.contains("z"));
         return strings;
